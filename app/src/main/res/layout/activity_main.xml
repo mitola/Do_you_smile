@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/topLayout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="2"
+    android:rowCount="2"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:keepScreenOn="true">
+
+    <com.codeandunicorns.face.doyousmile.uicamera.CameraSourcePreview
+        android:id="@+id/preview"
+        android:layout_width="208dp"
+        android:layout_height="277dp"
+        android:layout_gravity="center|left|top">
+
+    </com.codeandunicorns.face.doyousmile.uicamera.CameraSourcePreview>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imageView"
+        android:layout_gravity="center_horizontal|left|top"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/jokeView"
+        android:layout_toEndOf="@+id/preview" />
+
+    <com.codeandunicorns.face.doyousmile.uicamera.GraphicOverlay
+        android:id="@+id/faceOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/jokeView"
+        android:layout_toStartOf="@+id/imageView" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout"
+        android:gravity="center_horizontal"
+        android:weightSum="1">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_main"
+            android:id="@+id/takepicturebutton"
+            android:textSize="20sp" />
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/banner_ad_unit_id">
+        </com.google.android.gms.ads.AdView>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="@string/starting_text"
+        android:id="@+id/jokeView"
+        android:layout_gravity="right|top"
+        android:layout_below="@+id/preview"
+        android:layout_above="@+id/linearLayout"
+        android:textSize="17dp"
+        android:textIsSelectable="false"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Do you smile?</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="banner_ad_unit_id">ca-app-pub-YOURID</string>
+    <string name="starting_text">Scan your current mood! Do you smile or not is the question?\nClick and find out!</string>
+    <string name="button_main">Take mood picture</string>
+</resources>
