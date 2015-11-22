@@ -5,7 +5,7 @@ Website: https://codeandunicorns.com/
 
 Google Mobile Vision API: https://developers.google.com/vision/?hl=en
 
-Articles on the blog connected to this repo:
+Articles on the blog connected to this repo:,
 
 https://codeandunicorns.com/android-google-vision-project-example-part-1/
 
